@@ -1,0 +1,123 @@
+/*
+
+            Copyright 2020 @almostindented.
+ Distributed under the Boost Software License, Version 1.0.
+        (See accompanying file LICENSE or copy at
+          https://www.boost.org/LICENSE_1_0.txt)
+
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
+
+.hidden {
+    display: none;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #3f48cc;
+    font-family: 'Inter', sans-serif;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    overflow: hidden;
+}
+div.section {
+    height: calc(100% - 50px);
+    width: calc(100% - 50px);
+    text-align: center;
+    padding: 25px;
+    position: relative;
+}
+button.hero {
+    outline: none;
+    border: none;
+    padding: calc(25px + 2px) 70px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: inherit;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+button.hero div {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    height: calc(100% - 10px);
+    width: 0;
+    transition: width .5s .3s;
+    background-color: white;
+}
+button.hero span {
+    position: absolute;
+    top: calc(50% - 10.5px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    transition: color .5s .3s;
+    animation: btn1text 2s;
+}
+button.hero::before, button.hero::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    animation: btn1lines 2s;
+}
+button.hero::before {top: 0; left: 0; transition: width .5s .1s;}
+button.hero::after {bottom: 0; right: 0; transition: width .5s .2s;}
+
+button.hero:hover div {width: calc(100% - 6px);}
+button.hero:hover::before {width: 0;}
+button.hero:hover::after {width: 0;}
+button.hero:hover span {color: #000;}
+
+
+@keyframes textTranslate1 {
+    0% {transform: translateX(0px) translateY(100px);}
+}
+@keyframes textTranslate2 {
+    0% {transform: translateX(0px) translateY(-100px);}
+}
+
+@keyframes btn1lines {
+    0% {width: 0}
+    50% {width: 0}
+}
+@keyframes btn1text {
+    0% {color: #3f48cc}
+    50% {color: #3f48cc}
+}
+@keyframes fadeinWithDelay {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+
+div.section.main div.info {transform: translateY(-100px); padding: 20px; background-color: #fff; border-radius: 5px; animation: fadeinWithDelay 2s;}
+div.section.main img.profile {width: 120px; height: 120px; border-radius: 50%;}
+div.section.main img.profile.topleft {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    animation: fadeinWithDelay 2s;
+}
