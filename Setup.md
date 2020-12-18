@@ -9,6 +9,7 @@ Here's how to get started. You'll need [Node.js](https://nodejs.org/en/) install
 
 Once complete, run `npm i` to install dependencies.
 Then, create a new file in the project root called _auth_config.json_. __Do not _ever_ commit this file__; it contains sensitive information.
+
 Lastly, copy, paste and fill in the JSON file, replacing __[domain]__ and __[client_id]__ as necessary:
 
     {
