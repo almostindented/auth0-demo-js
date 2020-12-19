@@ -5,7 +5,7 @@ It was designed by [@almostindented](https://github.com/almostindented) and load
 
 It is a basic app, which allows the user to sign in, sign up, log out and view basic profile information like their nickname, email and avatar.
 
-Looking to dive right in? Check out Setup.md to get started.
+Looking to dive right in? Check out [Setup.md](https://github.com/almostindented/auth0-demo-js/blob/master/Setup.md) to get started.
 
 ## License
     Copyright (C) 2020 @almostindented.
