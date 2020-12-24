@@ -1,4 +1,5 @@
 # Auth0 JavaScript Demo
+![CodeQL](https://github.com/almostindented/auth0-demo-js/workflows/CodeQL/badge.svg)
 
 This project is a demo for Auth0, adapted from Auth0's Quick Start guide.
 It was designed by [@almostindented](https://github.com/almostindented) and loads the Auth0 library from the CDN.
