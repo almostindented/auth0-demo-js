@@ -10,7 +10,7 @@
   "author": {
     "name": "almostindented"
   },
-  "license": "OSL-3.0",
+  "license": "BSL-1.0",
   "private": "true",
   "dependencies": {
     "express": "^4.17.1",
