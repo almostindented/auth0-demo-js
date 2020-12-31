@@ -44,13 +44,6 @@ window.onload = async () => {
     await configureClient();
     updateUI();
 
-    const isAuthenticated = await auth0.isAuthenticated();
-
-    if (isAuthenticated) {
-        // show the gated content
-        return;
-    }
-
     const query = window.location.search;
     if (query.includes("code=") && query.includes("state=")) {
 
