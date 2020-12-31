@@ -1,5 +1,5 @@
 # Setup
-Thanks for trying out this project! :grin:
+Thanks for trying out this project! :smiley:
 Here's how to get started. You'll need [Node.js](https://nodejs.org/en/) installed.
 
 1. Log in to (or sign up for) [the Auth0 Dashboard](https://manage.auth0.com).
